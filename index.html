@@ -1,0 +1,135 @@
+ <!DOCTYPE html>
+ <html lang="en">
+     <head>
+        <title>Weather Dashboard</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      
+        <link
+         rel="stylesheet"
+         href = "https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+         integrity = "sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+         crossorigin = "anonymous" />
+       <link
+         href = "https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+         rel="stylesheet" />
+         <link src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"/>
+         <link rel="stylesheet" href="assets/style.css" />
+    
+                 <style> 
+                @media (min-width: 576px) { body { background-color: #c51111; }}
+                @media (min-width: 768px) { body { background-color: #ec9a9a; }}
+                @media (min-width: 992px) { body { background-color: rgb(255, 255, 255); }}
+                @media (min-width: 1200px) { body { background-color: white; }}
+                </style> 
+     </head>
+<body>
+    <header>
+        <div id="dash">Weather Dashboard</div>
+    </header>
+
+    <div id="main">
+        <div class="row">
+            <div class="col-md-4">
+                    
+                <div id="search">
+                        <p style="font-size:15px; font-weight:bold">Search for a City</p>
+                    <input id="searchInput" type="text" name="city" value=" Search" > 
+                    <input type="image" id="inputImage" src="images/searchicon.png"> 
+                  
+                </div>
+                <div class="city">Los Angeles</div>
+                <div class="city">New York</div>
+                <div class="city">San Francisco</div>
+                <div class="city">Chicago</div>
+                <div class="city">Boston</div>
+
+            </div>
+            <div class="col-md-8">
+                    <div class="row1">
+                            <div class="col-sm-7">
+                                        <div id="subHeader1">
+                                            <div class="currentCity"></div>
+                                            <div class="todayDate"></div>
+                                        
+                                        </div>
+                                        <div id="weatherCurrent">
+                                            
+                                                <div class="core1"></div>
+                                                <div class="core2"></div>
+                                                <div class="core3"></div>
+                                                <div class="core4"></div>
+                                        </div>
+                            </div>
+                            <div class="col-sm-5">
+                                    
+                                    <img src="" alt="weather icon" class="weatherIcon">
+                                    <div class="description"></div> 
+                            </div>
+                        
+                    </div>
+                    <div class="row2">
+                            <div id="subHeader2">5-Day Forecast:</div>
+                            <div class="col-md-12">
+                                <div class="fore1">
+                                    <div class="day">11/09/2019</div>
+                                    <div class="Icon">
+                                        <img src="#weatherIcon" alt="">
+                                    </div>
+                                    <div>temperature:90.9 F</div>
+                                    <div>Humidity:41%</div>
+                                </div>
+                                <div class="fore2">
+                                        <div class="day">11/10/2019</div>
+                                        <div class="Icon">
+                                            <img src="#weatherIcon" alt="">
+                                        </div>
+                                        <div>temperature:90.9 F</div>
+                                        <div>Humidity:41%</div>
+                                </div>
+                                <div class="fore3">
+                                    <div class="day">11/11/2019</div>
+                                    <div class="Icon">
+                                        <img src="#weatherIcon" alt="">
+                                    </div>
+                                    <div>temperature:90.9 F</div>
+                                    <div>Humidity:41%</div>
+                                </div>
+                                <div class="fore4">
+                                    <div class="day">11/12/2019</div>
+                                    <div class="Icon">
+                                        <img src="#weatherIcon" alt="">
+                                    </div>
+                                    <div>temperature:90.9 F</div>
+                                    <div>Humidity:41%</div>
+                                </div>
+                                <div class="fore5">
+                                        <div class="day">11/13/2019</div>
+                                        <div class="Icon">
+                                            <img src="#weatherIcon" alt="">
+                                        </div>
+                                        <div>temperature:90.9 F</div>
+                                        <div>Humidity:41%</div>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer fixed-bottom">
+        <div>© Weather Zone Pvt Ltd.</div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src='assets/weather.js'></script>
+</body>
+ </html>
