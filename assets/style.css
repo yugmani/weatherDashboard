@@ -37,10 +37,16 @@ html body {
     height:100%;
     padding:10px;
     }
-.col-md-4, .col-md-8 {
+ .col-md-8 {
     background-color: lightgray;
     margin:20px 0px;
 }
+
+.col-md-4 {
+    background-color: rgb(194, 186, 186);
+    margin:20px 0px;
+}
+
 
 
 
@@ -60,28 +66,46 @@ html body {
     float:left;
     border:none;
     background-color:white;
+    text-transform: capitalize;
 }
 
 #inputImage {
-    
     width:30px;
     height:30px;
     border:none;
     margin-left:0px;
 }
 
+/* #searchInput:hover, #inputImage:hover {
+    border:none;
+    transition:1s;
+} */
+
 .weatherIcon {
     width:100px;
     height:100px;
     border:none;
 }
+
+.day12, .day22, .day32, .day42, .day52 {
+    width:50px;
+    height:50px;
+    border:none;
+}
+
+.day11, .day21, .day31, .day41, .day51 {
+    text-align:center;
+    font-weight:bolder;
+    padding-top:5px;
+}
     
 
-.city {
+.city1, .city2, .city3, .city4, .city5, .city6 {
     padding:10px 5px;
     margin:10px;
     width:100%;
     border:1px solid whitesmoke;
+    text-transform: capitalize;
     
 }
 
@@ -100,20 +124,35 @@ html body {
 
 .currentCity, .todayDate  {
     font-weight:bold;
-    font-size:18px;
+    font-size:16px;
     margin-right:15px;
     padding:5px;
+    text-transform:uppercase;
 
 }
 
 .description {
     font-weight:lighter;
     font-size:20px;
-   
+   text-transform: capitalize;
     padding:5px;
 }
 
-.col-sm-5 {
+.des1, .des2, .des3, .des4, .des5 {
+    font-weight:lighter;
+    font-size:12px;
+    text-transform: capitalize;
+    padding:5px;
+    text-align: center;
+}
+
+.Icon {
+    display:flex;
+    margin:0 auto;
+    justify-content: space-between;
+}
+
+.col-md-5 {
     align-content: center;
     vertical-align: middle;
   margin:20px 60px 10px 10px;  

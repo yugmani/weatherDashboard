@@ -17,9 +17,11 @@
        <link
          href = "https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
          rel="stylesheet" />
-         <link src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"/>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"/></script>
          <link rel="stylesheet" href="assets/style.css" />
-    
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"/></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+         <script src='assets/weather.js'></script>
                  <style> 
                 @media (min-width: 576px) { body { background-color: #c51111; }}
                 @media (min-width: 768px) { body { background-color: #ec9a9a; }}
@@ -37,37 +39,37 @@
             <div class="col-md-4">
                     
                 <div id="search">
-                        <p style="font-size:15px; font-weight:bold">Search for a City</p>
-                    <input id="searchInput" type="text" name="city" value=" Search" > 
+                    <p style="font-size:15px; font-weight:bold">Search for a City</p>
+                    <input id="searchInput" type="text" name="city" value="" > 
                     <input type="image" id="inputImage" src="images/searchicon.png"> 
                   
                 </div>
-                <div class="city">Los Angeles</div>
-                <div class="city">New York</div>
-                <div class="city">San Francisco</div>
-                <div class="city">Chicago</div>
-                <div class="city">Boston</div>
-
+                <div class="city1">Los Angeles</div>
+                <div class="city2">New York</div>
+                <div class="city3">San Francisco</div>
+                <div class="city4">Chicago</div>
+                <div class="city5">Boston</div>
+                <div class="city6">Boston</div>
             </div>
             <div class="col-md-8">
                     <div class="row1">
-                            <div class="col-sm-7">
+                            <div class="col-md-7">
                                         <div id="subHeader1">
-                                            <div class="currentCity"></div>
-                                            <div class="todayDate"></div>
+                                            <div class="currentCity">Los Angeles</div>
+                                            <div class="todayDate">11/10/2019</div>
                                         
                                         </div>
                                         <div id="weatherCurrent">
                                             
-                                                <div class="core1"></div>
-                                                <div class="core2"></div>
-                                                <div class="core3"></div>
-                                                <div class="core4"></div>
+                                                <div class="core1">Temperature: 65&#176;F</div>
+                                                <div class="core2">Wind Speed: 2 m/s</div>
+                                                <div class="core3">Humidity: 87%</div>
+                                                <div class="core4">UV Index:</div>
                                         </div>
                             </div>
-                            <div class="col-sm-5">
+                            <div class="col-md-5">
                                     
-                                    <img src="" alt="weather icon" class="weatherIcon">
+                                    <img src="images/cloudy.png" alt="weather icon" class="weatherIcon">
                                     <div class="description"></div> 
                             </div>
                         
@@ -76,44 +78,49 @@
                             <div id="subHeader2">5-Day Forecast:</div>
                             <div class="col-md-12">
                                 <div class="fore1">
-                                    <div class="day">11/09/2019</div>
+                                    <div class="day11">11/09/2019</div>
                                     <div class="Icon">
-                                        <img src="#weatherIcon" alt="">
+                                        <img class="day12" src="#weatherIcon" alt="">
+                                        <div class="des1"></div>
                                     </div>
-                                    <div>temperature:90.9 F</div>
-                                    <div>Humidity:41%</div>
+                                    <div class="day13">Temperature:90.9 F</div>
+                                    <div class="day14">Humidity:41%</div>
                                 </div>
                                 <div class="fore2">
-                                        <div class="day">11/10/2019</div>
+                                        <div class="day21">11/10/2019</div>
                                         <div class="Icon">
-                                            <img src="#weatherIcon" alt="">
+                                            <img class="day22" src="#weatherIcon" alt="">
+                                            <div class="des2"></div>
                                         </div>
-                                        <div>temperature:90.9 F</div>
-                                        <div>Humidity:41%</div>
+                                        <div class="day23">Temperature:90.9 F</div>
+                                        <div class="day24">Humidity:41%</div>
                                 </div>
                                 <div class="fore3">
-                                    <div class="day">11/11/2019</div>
+                                    <div class="day31">11/11/2019</div>
                                     <div class="Icon">
-                                        <img src="#weatherIcon" alt="">
+                                        <img class="day32" src="#weatherIcon" alt="">
+                                        <div class="des3"></div>
                                     </div>
-                                    <div>temperature:90.9 F</div>
-                                    <div>Humidity:41%</div>
+                                    <div class="day33">Temperature:90.9 F</div>
+                                    <div class="day34">Humidity:41%</div>
                                 </div>
                                 <div class="fore4">
-                                    <div class="day">11/12/2019</div>
+                                    <div class="day41">11/12/2019</div>
                                     <div class="Icon">
-                                        <img src="#weatherIcon" alt="">
+                                        <img class="day42" src="#weatherIcon" alt="">
+                                        <div class="des4"></div>
                                     </div>
-                                    <div>temperature:90.9 F</div>
-                                    <div>Humidity:41%</div>
+                                    <div class="day43">Temperature:90.9 F</div>
+                                    <div class="day44">Humidity:41%</div>
                                 </div>
                                 <div class="fore5">
-                                        <div class="day">11/13/2019</div>
+                                        <div class="day51">11/13/2019</div>
                                         <div class="Icon">
-                                            <img src="#weatherIcon" alt="">
+                                            <img class="day52" src="#weatherIcon" alt="">
+                                            <div class="des5"></div>
                                         </div>
-                                        <div>temperature:90.9 F</div>
-                                        <div>Humidity:41%</div>
+                                        <div class="day53">Temperature:90.9 F</div>
+                                        <div class="day54">Humidity:41%</div>
                                 </div>
                             </div>
 
@@ -128,8 +135,9 @@
         <div>© Weather Zone Pvt Ltd.</div>
     </footer>
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"/></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src='assets/weather.js'></script>
+    
 </body>
  </html>
