@@ -1,28 +1,34 @@
  <!DOCTYPE html>
  <html lang="en">
      <head>
+
+        <!-- TITLE SECTION -->
         <title>Weather Dashboard</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-      
+        <!-- EXTERNAL CSS REFERENCE SECTION -->
+        <link rel="stylesheet" 
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+            crossorigin="anonymous"/>
+        <link 
+            rel="stylesheet" 
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
         <link
-         rel="stylesheet"
-         href = "https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-         integrity = "sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-         crossorigin = "anonymous" />
-       <link
+            rel="stylesheet"
+            href = "https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+            integrity = "sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+            crossorigin = "anonymous" />
+        <link
          href = "https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
          rel="stylesheet" />
-         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"/></script>
-         <link rel="stylesheet" href="assets/style.css" />
-         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"/></script>
-         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-         <script src='assets/weather.js'></script>
-                 <style> 
+        
+        <link rel="stylesheet" href="assets/style.css" />
+        
+                <!-- MEDIA QUERY SECTION -->
+                <style> 
                 @media (min-width: 576px) { body { background-color: #c51111; }}
                 @media (min-width: 768px) { body { background-color: #ec9a9a; }}
                 @media (min-width: 992px) { body { background-color: rgb(255, 255, 255); }}
@@ -30,6 +36,8 @@
                 </style> 
      </head>
 <body>
+
+    <!-- HEADER SECTION -->
     <header>
         <div id="dash">Weather Dashboard</div>
     </header>
@@ -37,13 +45,18 @@
     <div id="main">
         <div class="row">
             <div class="col-md-4">
-                    
+                
+                <!-- NEW CITY SEARCH SECTION -->
                 <div id="search">
                     <p style="font-size:15px; font-weight:bold">Search for a City</p>
                     <input id="searchInput" type="text" name="city" value="" > 
-                    <input type="image" id="inputImage" src="images/searchicon.png"> 
+                    <input type="image" id="inputImage" src="images/searchicon.png">
+                    <button type="submit" id = "refresh" onclick="refreshPage()">Refresh</button>
+                    <p style="font-size:12px;margin-bottom:0px;">*Refresh for New Search</p>
                   
                 </div>
+
+                <!-- PREVIOUS SEARCHED CITIES SECTION -->
                 <p style="font-size:13px; font-weight:bold; margin-left:10px;">Recent Searched Cities: </p>
                 <div class="city1">Los Angeles</div>
                 <div class="city2">New York</div>
@@ -52,6 +65,8 @@
                 <div class="city5">Boston</div>
                 <div class="city6">Dallas</div>
             </div>
+
+            <!-- CURRENT CITY WEATHER CONDITION SECTION -->
             <div class="col-md-8">
                     <div class="row1">
                             <div class="col-md-7">
@@ -75,6 +90,8 @@
                             </div>
                         
                     </div>
+
+                    <!-- FIVE DAYS FORECAST SECTION -->
                     <div class="row2">
                             <div id="subHeader2">5-Day Forecast:</div>
                             <div class="col-md-12">
@@ -82,8 +99,9 @@
                                     <div class="day11">11/09/2019</div>
                                     <div class="Icon">
                                         <img class="day12" src="#weatherIcon" alt="">
-                                        <div class="des1"></div>
+                                        
                                     </div>
+                                    <div class="des1"></div>
                                     <div class="day13">Temperature:90.9 F</div>
                                     <div class="day14">Humidity:41%</div>
                                 </div>
@@ -91,8 +109,8 @@
                                         <div class="day21">11/10/2019</div>
                                         <div class="Icon">
                                             <img class="day22" src="#weatherIcon" alt="">
-                                            <div class="des2"></div>
                                         </div>
+                                        <div class="des2"></div>
                                         <div class="day23">Temperature:90.9 F</div>
                                         <div class="day24">Humidity:41%</div>
                                 </div>
@@ -100,8 +118,9 @@
                                     <div class="day31">11/11/2019</div>
                                     <div class="Icon">
                                         <img class="day32" src="#weatherIcon" alt="">
-                                        <div class="des3"></div>
+                                        
                                     </div>
+                                    <div class="des3"></div>
                                     <div class="day33">Temperature:90.9 F</div>
                                     <div class="day34">Humidity:41%</div>
                                 </div>
@@ -109,8 +128,9 @@
                                     <div class="day41">11/12/2019</div>
                                     <div class="Icon">
                                         <img class="day42" src="#weatherIcon" alt="">
-                                        <div class="des4"></div>
+                                        
                                     </div>
+                                    <div class="des4"></div>
                                     <div class="day43">Temperature:90.9 F</div>
                                     <div class="day44">Humidity:41%</div>
                                 </div>
@@ -118,8 +138,9 @@
                                         <div class="day51">11/13/2019</div>
                                         <div class="Icon">
                                             <img class="day52" src="#weatherIcon" alt="">
-                                            <div class="des5"></div>
+                                            
                                         </div>
+                                        <div class="des5"></div>
                                         <div class="day53">Temperature:90.9 F</div>
                                         <div class="day54">Humidity:41%</div>
                                 </div>
@@ -132,13 +153,21 @@
         </div>
     </div>
 
-    <div class="footer fixed-bottom">
-        <div>© Weather Zone Pvt Ltd.</div>
-    </footer>
+<!-- FOOTER SECTION -->  
+<div class="footer fixed-bottom">
+    <div>© Weather Zone Pvt Ltd.</div>
+</footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"/></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src='assets/weather.js'></script>
+<!-- SCRIPT SECTION -->
+<script> 
+        function refreshPage() {
+        window.location.reload();
+        }
+</script>    
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"/></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src='assets/weather.js'></script>
     
 </body>
- </html>
+</html>

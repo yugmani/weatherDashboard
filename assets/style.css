@@ -15,40 +15,34 @@ html body {
     font-weight:bold;
     padding:15px;
     text-transform:uppercase;
-    margin:0 auto;
-    
+    margin:0 auto; 
 }
 
 #main {
     width: 90%;
     margin:0 auto;
     background-color:#7F8C8D;
-    /* margin-top:20px; */
     margin-bottom:100px;
-    /* margin-top:0px;  */
-}
+    }
 
 .row {
     display:flex;
     margin:0 auto;
     justify-content: space-between;
-    /* background-color: lightgreen; */
     margin-top:0px;
     height:100%;
     padding:10px;
     }
+
  .col-md-8 {
     background-color: lightgray;
     margin:20px 0px;
-}
+    }
 
 .col-md-4 {
     background-color: rgb(194, 186, 186);
     margin:20px 0px;
-}
-
-
-
+    }
 
 #search {
     padding:10px 5px;
@@ -56,13 +50,10 @@ html body {
     width:100%;
     height:auto;
     border:1px solid whitesmoke;
-    /* background-color:rgb(136, 73, 73); */
-   
-}
+    }
 
 #searchInput {
     height:30px;
-    /* padding:8px; */
     float:left;
     border:none;
     background-color:white;
@@ -76,10 +67,13 @@ html body {
     margin-left:0px;
 }
 
-/* #searchInput:hover, #inputImage:hover {
-    border:none;
-    transition:1s;
-} */
+#refresh {
+    width:80px;
+    height:30px;
+    margin-left:10px;
+    float:right;
+    margin-right:20px;
+    }
 
 .weatherIcon {
     width:100px;
@@ -88,10 +82,10 @@ html body {
 }
 
 .day12, .day22, .day32, .day42, .day52 {
-    width:50px;
-    height:50px;
+    width:55px;
+    height:55px;
     border:none;
-}
+   }
 
 .day11, .day21, .day31, .day41, .day51 {
     text-align:center;
@@ -105,15 +99,13 @@ html body {
     margin:10px;
     width:100%;
     border:1px solid whitesmoke;
-    text-transform: capitalize;
-    
+    text-transform: capitalize;  
 }
 
 #subHeader1 {
     display:flex;
     margin:20px 10px;
-    /* background-color: lightgray; */
-}
+   }
 
 #subHeader2 {
     margin:5px;
@@ -128,13 +120,12 @@ html body {
     margin-right:15px;
     padding:5px;
     text-transform:uppercase;
-
 }
 
 .description {
     font-weight:lighter;
     font-size:20px;
-   text-transform: capitalize;
+    text-transform: capitalize;
     padding:5px;
 }
 
@@ -142,53 +133,41 @@ html body {
     font-weight:lighter;
     font-size:12px;
     text-transform: capitalize;
-    padding:5px;
-    text-align: center;
-}
+   }
 
 .Icon {
-    display:flex;
-    margin:0 auto;
-    justify-content: space-between;
+    text-align: center;
 }
 
 .col-md-5 {
     align-content: center;
     vertical-align: middle;
-  margin:20px 60px 10px 10px;  
-  /* background-color:red; */
-  padding:20px;
-  float:left;
-  
-}
+    margin:20px 60px 10px 10px;  
+    padding:20px;
+    float:left;
+  }
+
 #weatherCurrent {
-    
     margin:20px 10px;
-    /* background-color: lightgray; */
-}
+   }
 
 .core1, .core2, .core3, .core4 {
     margin-right:15px;
     padding:5px;
-    /* background-color:linen; */
-}
+    }
 
 .row1 {
     margin:10px 0px;
     border:1px solid white;
-    /* background-color:whitesmoke; */
     display:flex;
     justify-content: space-between;
-    
-}
+    }
 
 .col-md-12 {
     display:flex;
     margin:0 auto;
     justify-content: space-between;
-    /* background-color:lightsteelblue; */
-   height:auto;
-
+    height:auto;
 }
 
 .fore1, .fore2, .fore3, .fore4, .fore5 {
@@ -196,13 +175,13 @@ html body {
     color:black;
     border-radius:8%;
     margin-bottom:5px;
-    height:138px;
-    padding:5px;
+    height:160px;
+    padding:8px 8px 10px 8px;
 }
 
 .row2 {
     width:100%;
-    height:195px;
+    height:225px;
     background-color:lightgray;
     border:1px solid white;
     margin-bottom:20px;
@@ -216,6 +195,4 @@ html body {
     width:100%;
     height:40px;
     background-color: lightyellow;
-    /* position:fixed; */
- 
-}
+    }
