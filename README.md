@@ -6,5 +6,5 @@ Weather Dashboard Application
 3.In addition, users can see last 6 cities searched already. 
 4. User Guide: User needs to type the name of a city in search box and click on the search icon. To search weather condition of next city, user needs to refresh by clicking on the refresh button before clicking on the search icon. 
 5. This application is fully responsive for different screen sizes of devices users use. 
-6. It has beautiful layout of sections with clearly and calm background and text colors. 
+6. It has beautiful layout of sections with clearl and calm background and text colors. 
 7. This application is developed in HTML, CSS, Javascript, Jquery, Ajax and has access of some APIs. 
