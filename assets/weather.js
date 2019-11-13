@@ -162,7 +162,7 @@ $("#inputImage").click(function (){
 //Creating Function for UV Index
 function uvIndex (lat, lon){
     
-      var qURL = "http://api.openweathermap.org/data/2.5/uvi?appid="+APIKey+"&lat="+lat+"&lon="+lon;
+      var qURL = "https://api.openweathermap.org/data/2.5/uvi?appid="+APIKey+"&lat="+lat+"&lon="+lon;
 
           $.ajax({
             url: qURL,
